@@ -68,7 +68,7 @@
             rgba(9,9,9,.25) 100%
         );
 
-    z-index:2;
+    z-index:-1;
 
 }
 
@@ -1680,9 +1680,15 @@ height:460px;
 
 .loader-content img{
 
-    height:90px;
+    width:420px;
 
-    margin:auto auto 30px;
+    height:auto;
+
+    object-fit:contain;
+
+    transform:scale(1.8);
+
+    margin-bottom:-35px;
 
 }
 
@@ -3134,5 +3140,54 @@ text-align:center;
         transform:scale(1.08);
 
     }
+
+}
+.experience-overview{
+
+    padding:140px 0;
+
+}
+
+.overview-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.overview-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:45px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.overview-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+}
+
+.overview-card h3{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
 
 }
