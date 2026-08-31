@@ -1,0 +1,72 @@
+/* ==========================================================
+   PAGE BACKGROUNDS
+========================================================== */
+
+body{
+
+    background:
+        radial-gradient(circle at top,
+            rgba(255,204,0,.05),
+            transparent 30%),
+
+        linear-gradient(
+            180deg,
+            #090909 0%,
+            #0c0c0c 25%,
+            #090909 50%,
+            #0d0d0d 75%,
+            #090909 100%
+        );
+
+}
+
+/* ==========================================================
+   SECTION SPACING
+========================================================== */
+
+section{
+
+    position:relative;
+
+    padding:140px 0;
+
+}
+
+section:nth-child(even){
+
+    background:rgba(255,255,255,.015);
+
+}
+
+/* ==========================================================
+   DIVIDER
+========================================================== */
+
+.section-header{
+
+    margin-bottom:90px;
+
+}
+
+.section-header::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    margin:30px auto 0;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+}
+html{
+
+scroll-padding-top:110px;
+
+}

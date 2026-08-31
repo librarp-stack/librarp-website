@@ -157,189 +157,84 @@
 
 <body>
     <!-- ==========================================================
+     PAGE LOADER
+========================================================== -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <img
+            src="assets/images/logos/logo.png"
+            alt="Libra RP">
+
+        <h2>
+
+            LIBRA RP
+
+        </h2>
+
+        <p>
+
+            Loading Los Santos...
+
+        </p>
+
+        <div class="loader-bar">
+
+            <div class="loader-progress"></div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="cursorGlow"></div>
+    <!-- ==========================================================
      NAVIGATION
 ========================================================== -->
 
 <header class="navbar">
 
+<header class="navbar">
+
     <div class="container nav-inner">
 
-        <!-- ======================================
-             LOGO
-        ======================================= -->
+        <!-- LOGO -->
 
         <a href="index.html" class="logo">
 
-            <img src="assets/images/logo.png"
-                 alt="Libra RP Logo">
+            <img
+                src="assets/images/logos/logo.png"
+                alt="Libra RP">
 
             <span>LIBRA</span> RP
 
         </a>
 
-        <!-- ======================================
-             DESKTOP NAVIGATION
-        ======================================= -->
+        <!-- NAV -->
 
         <nav class="nav-links">
 
-            <div class="nav-item">
+            <a href="play/getting-started.html">
 
-                <a href="play/getting-started.html">
+                Play
 
-                    Play
+            </a>
 
-                    <i class="fa-solid fa-chevron-down"></i>
+            <a href="experience/index.html">
 
-                </a>
+                Experience
 
-                <div class="dropdown">
+            </a>
 
-                    <a href="play/getting-started.html">
-                        Getting Started
-                    </a>
+            <a href="careers/sapf.html">
 
-                    <a href="play/beginner-guide.html">
-                        Beginner Guide
-                    </a>
+                Departments
 
-                    <a href="play/connect.html">
-                        Connect to Server
-                    </a>
+            </a>
 
-                </div>
-
-            </div>
-
-            <!-- ========================== -->
-
-            <div class="nav-item">
-
-                <a href="experience/index.html">
-
-                    Experience
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </a>
-
-                <div class="dropdown">
-
-                    <a href="experience/vehicles.html">
-                        Vehicles
-                    </a>
-
-                    <a href="experience/housing.html">
-                        Housing
-                    </a>
-
-                    <a href="experience/businesses.html">
-                        Businesses
-                    </a>
-
-                    <a href="experience/librahub.html">
-                        LibraHub
-                    </a>
-
-                    <a href="experience/casino.html">
-                        Casino
-                    </a>
-
-                    <a href="experience/economy.html">
-                        Economy
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- ========================== -->
-
-            <div class="nav-item">
-
-                <a href="careers/sapf.html">
-
-                    Departments
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </a>
-
-                <div class="dropdown">
-
-                    <a href="careers/sapf.html">
-
-                        SAPF
-
-                    </a>
-
-                    <a href="careers/fib.html">
-
-                        FIB
-
-                    </a>
-
-                    <a href="careers/ems.html">
-
-                        EMS
-
-                    </a>
-
-                    <a href="careers/government.html">
-
-                        Government
-
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- ========================== -->
-
-            <div class="nav-item">
-
-                <a href="criminal/gangs.html">
-
-                    Criminal
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </a>
-
-                <div class="dropdown">
-
-                    <a href="criminal/gangs.html">
-
-                        Gangs
-
-                    </a>
-
-                    <a href="criminal/robberies.html">
-
-                        Robberies
-
-                    </a>
-
-                    <a href="criminal/drugs.html">
-
-                        Drugs
-
-                    </a>
-
-                    <a href="criminal/crafting.html">
-
-                        Weapon Crafting
-
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- ========================== -->
-
-            <a href="community/events.html">
+            <a href="community/index.html">
 
                 Community
 
@@ -347,7 +242,7 @@
 
             <a href="support/index.html">
 
-                Support
+                Knowledge Base
 
             </a>
 
@@ -359,125 +254,37 @@
 
         </nav>
 
-        <!-- ======================================
-             ACTIONS
-        ======================================= -->
-
         <div class="nav-actions">
 
-            <a href="https://discord.gg/librarp"
+            <a
 
-               target="_blank"
+                href="https://discord.gg/librarp"
 
-               class="discord-btn">
+                class="discord-btn"
+
+                target="_blank">
 
                 <i class="fa-brands fa-discord"></i>
 
             </a>
 
-            <a href="https://cfx.re/join/pgak8ay"
+            <a
 
-               target="_blank"
+                href="https://cfx.re/join/pgak8ay"
 
-               class="btn btn-primary">
+                target="_blank"
 
-                Connect
+                class="btn btn-primary">
+
+                Play Now
 
             </a>
 
         </div>
 
-        <!-- ======================================
-             MOBILE MENU BUTTON
-        ======================================= -->
-
-        <button class="menu-toggle"
-
-                aria-label="Open Navigation">
-
-            <span></span>
-
-            <span></span>
-
-            <span></span>
-
-        </button>
-
     </div>
 
 </header>
-
-<!-- ==========================================
-     MOBILE MENU
-========================================== -->
-
-<nav class="mobile-nav">
-
-    <a href="index.html">
-
-        Home
-
-    </a>
-
-    <a href="play/getting-started.html">
-
-        Play
-
-    </a>
-
-    <a href="experience/index.html">
-
-        Experience
-
-    </a>
-
-    <a href="careers/sapf.html">
-
-        Departments
-
-    </a>
-
-    <a href="criminal/gangs.html">
-
-        Criminal World
-
-    </a>
-
-    <a href="community/events.html">
-
-        Community
-
-    </a>
-
-    <a href="support/index.html">
-
-        Support
-
-    </a>
-
-    <a href="/forums">
-
-        Forums
-
-    </a>
-
-    <a href="https://discord.gg/librarp"
-
-       target="_blank">
-
-        Discord
-
-    </a>
-
-    <a href="https://cfx.re/join/pgak8ay"
-
-       target="_blank"
-
-       class="btn btn-primary">
-
-        Connect Now
-
-    </a>
 
 </nav>
 <!-- ==========================================================
@@ -760,3 +567,1004 @@
     </div>
 
 </div>
+<!-- ==========================================================
+     CHOOSE YOUR STORY
+========================================================== -->
+
+<section class="journey">
+
+    <div class="container">
+
+        <div class="section-header fade-up">
+
+            <span class="badge">
+
+                <i class="fa-solid fa-compass"></i>
+
+                CHOOSE YOUR STORY
+
+            </span>
+
+            <h2>
+
+                Every Decision Creates A Different Future
+
+            </h2>
+
+            <p>
+
+                Libra RP gives you complete freedom to build your own story.
+                Become a police officer, run a criminal organization, own luxury
+                properties, build successful businesses or simply live your dream
+                life in Los Santos.
+
+            </p>
+
+        </div>
+
+        <div class="journey-grid">
+
+            <!-- SAPF -->
+
+            <a href="careers/sapf.html" class="journey-card">
+
+                <img
+                    src="assets/images/police/sapf.webp"
+                    alt="SAPF">
+
+                <div class="journey-overlay">
+
+                    <span class="journey-category">
+
+                        LAW ENFORCEMENT
+
+                    </span>
+
+                    <h3>
+
+                        Protect
+                        <br>
+                        San Andreas
+
+                    </h3>
+
+                    <p>
+
+                        Patrol the streets, join SWAT,
+                        investigate crime and become
+                        part of the elite SAPF.
+
+                    </p>
+
+                    <span class="journey-link">
+
+                        Explore
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- CRIMINAL -->
+
+            <a href="criminal/gangs.html"
+
+               class="journey-card">
+
+                <img
+                    src="assets/images/gangs/gang.webp"
+                    alt="Gang">
+
+                <div class="journey-overlay">
+
+                    <span class="journey-category">
+
+                        CRIMINAL WORLD
+
+                    </span>
+
+                    <h3>
+
+                        Rule
+                        <br>
+                        The Streets
+
+                    </h3>
+
+                    <p>
+
+                        Build your gang,
+                        expand into a cartel,
+                        dominate Los Santos.
+
+                    </p>
+
+                    <span class="journey-link">
+
+                        Enter The Underworld
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- VEHICLES -->
+
+            <a href="experience/vehicles.html"
+
+               class="journey-card">
+
+                <img
+                    src="assets/images/vehicles/vehicles.webp"
+                    alt="Vehicles">
+
+                <div class="journey-overlay">
+
+                    <span class="journey-category">
+
+                        VEHICLES
+
+                    </span>
+
+                    <h3>
+
+                        Drive
+                        <br>
+                        Your Dream
+
+                    </h3>
+
+                    <p>
+
+                        Explore one of the largest
+                        custom vehicle collections
+                        available on FiveM.
+
+                    </p>
+
+                    <span class="journey-link">
+
+                        View Collection
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================================
+     WHY LIBRA RP
+========================================================== -->
+
+<section class="why-libra">
+
+    <div class="container">
+
+        <div class="section-header fade-up">
+
+            <span class="badge">
+
+                <i class="fa-solid fa-star"></i>
+
+                WHY LIBRA RP
+
+            </span>
+
+            <h2>
+
+                Built For Players Who Want More
+
+            </h2>
+
+            <p>
+
+                Libra RP isn't just another FiveM server. Every system is designed
+                to create meaningful stories, rewarding progression and unforgettable
+                moments.
+
+            </p>
+
+        </div>
+
+        <!-- ==============================================
+             SAPF
+        =============================================== -->
+
+        <div class="showcase">
+
+            <div class="showcase-content">
+
+                <span class="showcase-tag">
+
+                    LAW ENFORCEMENT
+
+                </span>
+
+                <h2>
+
+                    Protect
+                    <br>
+                    San Andreas
+
+                </h2>
+
+                <p>
+
+                    Patrol the streets, investigate crimes, respond to emergencies
+                    and rise through elite SAPF divisions including SWAT,
+                    Detectives and Air Unit.
+
+                </p>
+
+                <ul class="showcase-list">
+
+                    <li><i class="fa-solid fa-check"></i> Patrol Division</li>
+
+                    <li><i class="fa-solid fa-check"></i> SWAT Operations</li>
+
+                    <li><i class="fa-solid fa-check"></i> Detective Bureau</li>
+
+                    <li><i class="fa-solid fa-check"></i> Air Support</li>
+
+                </ul>
+
+                <a
+
+                    href="careers/sapf.html"
+
+                    class="btn btn-primary">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+            <div class="showcase-image">
+
+                <img
+
+                    src="assets/images/police/sapf.webp"
+
+                    alt="SAPF">
+
+            </div>
+
+        </div>
+
+        <!-- ==============================================
+             CRIMINAL
+        =============================================== -->
+
+        <div class="showcase reverse">
+
+            <div class="showcase-content">
+
+                <span class="showcase-tag">
+
+                    CRIMINAL WORLD
+
+                </span>
+
+                <h2>
+
+                    Build
+                    <br>
+                    A Criminal Empire
+
+                </h2>
+
+                <p>
+
+                    Create your own gang, recruit members,
+                    expand into a cartel and dominate Los Santos
+                    through immersive criminal roleplay.
+
+                </p>
+
+                <ul class="showcase-list">
+
+                    <li><i class="fa-solid fa-check"></i> Drug Production</li>
+
+                    <li><i class="fa-solid fa-check"></i> Weapon Crafting</li>
+
+                    <li><i class="fa-solid fa-check"></i> Bank Robberies</li>
+
+                    <li><i class="fa-solid fa-check"></i> Chop Shops</li>
+
+                </ul>
+
+                <a
+
+                    href="criminal/gangs.html"
+
+                    class="btn btn-primary">
+
+                    Enter The Underworld
+
+                </a>
+
+            </div>
+
+            <div class="showcase-image">
+
+                <img
+
+                    src="assets/images/gangs/gang.webp"
+
+                    alt="Gang">
+
+            </div>
+
+        </div>
+
+        <!-- ==============================================
+             LIFESTYLE
+        =============================================== -->
+
+        <div class="showcase">
+
+            <div class="showcase-content">
+
+                <span class="showcase-tag">
+
+                    LIFESTYLE
+
+                </span>
+
+                <h2>
+
+                    Build
+                    <br>
+                    Your Legacy
+
+                </h2>
+
+                <p>
+
+                    Own luxury homes, collect custom vehicles,
+                    run successful businesses and create a life
+                    unique to your character.
+
+                </p>
+
+                <ul class="showcase-list">
+
+                    <li><i class="fa-solid fa-check"></i> Luxury Housing</li>
+
+                    <li><i class="fa-solid fa-check"></i> 50+ Businesses</li>
+
+                    <li><i class="fa-solid fa-check"></i> 150+ Vehicles</li>
+
+                    <li><i class="fa-solid fa-check"></i> Balanced Economy</li>
+
+                </ul>
+
+                <a
+
+                    href="experience/index.html"
+
+                    class="btn btn-primary">
+
+                    Explore Experience
+
+                </a>
+
+            </div>
+
+            <div class="showcase-image">
+
+                <img
+
+                    src="assets/images/housing/mansion.webp"
+
+                    alt="Housing">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================================
+     LIFE BEYOND THE CITY
+========================================================== -->
+
+<section class="lifestyle">
+
+    <div class="container">
+
+        <div class="section-header fade-up">
+
+            <span class="badge">
+
+                <i class="fa-solid fa-heart"></i>
+
+                LIFE BEYOND THE CITY
+
+            </span>
+
+            <h2>
+
+                More Than Just Roleplay
+
+            </h2>
+
+            <p>
+
+                Your story doesn't end when work is over. Attend community
+                events, relax in luxury locations, meet new people and build
+                unforgettable memories across Los Santos.
+
+            </p>
+
+        </div>
+
+        <div class="lifestyle-grid">
+
+            <!-- Community -->
+
+            <a href="community/events.html"
+
+               class="lifestyle-card large">
+
+                <img
+
+                    src="assets/images/community/dj.webp"
+
+                    alt="Community Events">
+
+                <div class="lifestyle-overlay">
+
+                    <span>
+
+                        COMMUNITY
+
+                    </span>
+
+                    <h3>
+
+                        Weekly Events
+
+                    </h3>
+
+                    <p>
+
+                        DJ nights, giveaways,
+                        creator events and community meetups.
+
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- Casino -->
+
+            <a href="experience/casino.html"
+
+               class="lifestyle-card">
+
+                <img
+
+                    src="assets/images/casino/casino.webp"
+
+                    alt="Casino">
+
+                <div class="lifestyle-overlay">
+
+                    <span>
+
+                        ENTERTAINMENT
+
+                    </span>
+
+                    <h3>
+
+                        Diamond Resort
+
+                    </h3>
+
+                </div>
+
+            </a>
+
+            <!-- LibraHub -->
+
+            <a href="experience/librahub.html"
+
+               class="lifestyle-card">
+
+                <img
+
+                    src="assets/images/librahub/phone.webp"
+
+                    alt="LibraHub">
+
+                <div class="lifestyle-overlay">
+
+                    <span>
+
+                        CONNECTED
+
+                    </span>
+
+                    <h3>
+
+                        LibraHub
+
+                    </h3>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================================
+     LATEST UPDATES
+========================================================== -->
+
+<section class="news">
+
+    <div class="container">
+
+        <div class="section-header fade-up">
+
+            <span class="badge">
+
+                <i class="fa-solid fa-newspaper"></i>
+
+                LATEST FROM LIBRA RP
+
+            </span>
+
+            <h2>
+
+                Always Something New
+
+            </h2>
+
+            <p>
+
+                Libra RP evolves every day with fresh content,
+                quality of life improvements, community events,
+                new vehicles and exciting gameplay additions.
+
+            </p>
+
+        </div>
+
+        <div class="news-grid">
+
+            <!-- FEATURED -->
+
+            <article class="news-card featured">
+
+                <img
+                    src="assets/images/hero/hero-3.webp"
+                    alt="Vehicle Update">
+
+                <div class="news-content">
+
+                    <span class="news-category">
+
+                        FEATURED UPDATE
+
+                    </span>
+
+                    <h3>
+
+                        Over 150 Custom Vehicles
+                        Ready To Drive
+
+                    </h3>
+
+                    <p>
+
+                        Discover one of FiveM's largest custom
+                        vehicle collections featuring imports,
+                        emergency fleets and exclusive builds.
+
+                    </p>
+
+                    <a href="experience/vehicles.html">
+
+                        Read More
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- SMALL -->
+
+            <article class="news-card">
+
+                <div class="news-content">
+
+                    <span class="news-category">
+
+                        LIBRAHUB
+
+                    </span>
+
+                    <h3>
+
+                        Stay Connected Everywhere
+
+                    </h3>
+
+                    <p>
+
+                        Banking, social media,
+                        navigation and marketplace.
+
+                    </p>
+
+                    <a href="experience/librahub.html">
+
+                        Explore
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="news-card">
+
+                <div class="news-content">
+
+                    <span class="news-category">
+
+                        COMMUNITY
+
+                    </span>
+
+                    <h3>
+
+                        Weekly Events & DJ Nights
+
+                    </h3>
+
+                    <p>
+
+                        Join community events,
+                        giveaways and creator meetups.
+
+                    </p>
+
+                    <a href="community/events.html">
+
+                        Learn More
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================================
+     EXPLORE LOS SANTOS
+========================================================== -->
+
+<section class="explore">
+
+    <div class="container">
+
+        <div class="section-header fade-up">
+
+            <span class="badge">
+
+                <i class="fa-solid fa-earth-americas"></i>
+
+                EXPLORE LOS SANTOS
+
+            </span>
+
+            <h2>
+
+                Every Corner Has A Story
+
+            </h2>
+
+            <p>
+
+                Discover every side of Libra RP, from luxury lifestyles
+                and thriving businesses to elite law enforcement and
+                dangerous criminal organizations.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="explore-slider">
+
+        <a href="careers/sapf.html" class="explore-card">
+
+            <img src="assets/images/police/sapf.webp" alt="SAPF">
+
+            <div class="explore-overlay">
+
+                <h3>Protect San Andreas</h3>
+
+                <span>Become SAPF</span>
+
+            </div>
+
+        </a>
+
+        <a href="criminal/gangs.html" class="explore-card">
+
+            <img src="assets/images/gangs/gang.webp" alt="Gang">
+
+            <div class="explore-overlay">
+
+                <h3>Rule The Streets</h3>
+
+                <span>Criminal World</span>
+
+            </div>
+
+        </a>
+
+        <a href="experience/vehicles.html" class="explore-card">
+
+            <img src="assets/images/vehicles/vehicles.webp" alt="Vehicles">
+
+            <div class="explore-overlay">
+
+                <h3>Drive Your Dream</h3>
+
+                <span>150+ Vehicles</span>
+
+            </div>
+
+        </a>
+
+        <a href="experience/housing.html" class="explore-card">
+
+            <img src="assets/images/housing/mansion.webp" alt="Housing">
+
+            <div class="explore-overlay">
+
+                <h3>Luxury Living</h3>
+
+                <span>Premium Housing</span>
+
+            </div>
+
+        </a>
+
+        <a href="experience/businesses.html" class="explore-card">
+
+            <img src="assets/images/businesses/business.webp" alt="Businesses">
+
+            <div class="explore-overlay">
+
+                <h3>Build An Empire</h3>
+
+                <span>50+ Businesses</span>
+
+            </div>
+
+        </a>
+
+        <a href="experience/casino.html" class="explore-card">
+
+            <img src="assets/images/casino/casino.webp" alt="Casino">
+
+            <div class="explore-overlay">
+
+                <h3>Diamond Resort</h3>
+
+                <span>Entertainment</span>
+
+            </div>
+
+        </a>
+
+        <a href="community/events.html" class="explore-card">
+
+            <img src="assets/images/community/dj.webp" alt="Community">
+
+            <div class="explore-overlay">
+
+                <h3>Join The Community</h3>
+
+                <span>Weekly Events</span>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+<!-- ==========================================================
+     FINAL CALL TO ACTION
+========================================================== -->
+
+<section class="final-cta">
+
+    <img
+        src="assets/images/community/dj.webp"
+        alt="Libra RP Community"
+        class="final-cta-bg">
+
+    <div class="final-overlay"></div>
+
+    <div class="container">
+
+        <div class="final-content fade-up">
+
+            <span class="badge">
+
+                <i class="fa-solid fa-star"></i>
+
+                YOUR JOURNEY BEGINS TODAY
+
+            </span>
+
+            <h2>
+
+                Your Story
+                <br>
+                Starts Here.
+
+            </h2>
+
+            <p>
+
+                Every decision shapes your future.
+                Protect the city, build an empire,
+                dominate the underworld or simply
+                enjoy life in Los Santos.
+
+                Libra RP is ready.
+
+                Are you?
+
+            </p>
+
+            <div class="button-group">
+
+                <a
+
+                    href="https://cfx.re/join/pgak8ay"
+
+                    target="_blank"
+
+                    class="btn btn-primary btn-large">
+
+                    <i class="fa-solid fa-play"></i>
+
+                    Connect Now
+
+                </a>
+
+                <a
+
+                    href="https://discord.gg/librarp"
+
+                    target="_blank"
+
+                    class="btn btn-secondary btn-large">
+
+                    <i class="fa-brands fa-discord"></i>
+
+                    Join Discord
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img
+                    src="assets/images/logos/logo.png"
+                    alt="Libra RP"
+                    style="height:70px;margin-bottom:20px;">
+
+                <p>
+
+                    Premium FiveM GTA V Roleplay
+                    built for immersive stories,
+                    realistic progression and
+                    unforgettable experiences.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Experience</h3>
+
+                <a href="experience/vehicles.html">Vehicles</a>
+                <a href="experience/housing.html">Housing</a>
+                <a href="experience/businesses.html">Businesses</a>
+                <a href="experience/librahub.html">LibraHub</a>
+
+            </div>
+
+            <div>
+
+                <h3>Departments</h3>
+
+                <a href="careers/sapf.html">SAPF</a>
+                <a href="careers/fib.html">FIB</a>
+                <a href="careers/ems.html">EMS</a>
+
+            </div>
+
+            <div>
+
+                <h3>Community</h3>
+
+                <a href="/forums">Forums</a>
+                <a href="support/index.html">Knowledge Base</a>
+                <a href="https://discord.gg/librarp">Discord</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Libra RP • All Rights Reserved
+
+        </div>
+
+    </div>
+
+</footer>
+
+<button id="scrollTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+/* ==========================================================
+   KEN BURNS
+========================================================== */
+
+.hero-slide{
+
+    animation:
+
+        heroZoom 10s linear forwards;
+
+}
+
+@keyframes heroZoom{
+
+0%{
+
+transform:scale(1);
+
+}
+
+100%{
+
+transform:scale(1.08);
+
+}
+
+}
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:url("../images/ui/noise.png");
+
+opacity:.035;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
