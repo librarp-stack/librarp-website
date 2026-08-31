@@ -63,29 +63,56 @@ function navbarScroll(){
 
 function heroSlider(){
 
-    const slides=document.querySelectorAll(".hero-slide");
+    const images=[
 
-    if(slides.length===0) return;
+        "assets/images/hero/hero-1.webp",
+
+        "assets/images/hero/hero-2.webp",
+
+        "assets/images/hero/hero-3.webp",
+
+        "assets/images/hero/hero-6.webp"
+
+    ];
+
+    const bg=document.getElementById("heroImage");
+
+    const card=document.getElementById("heroVisual");
+
+    if(!bg || !card) return;
 
     let current=0;
 
     setInterval(()=>{
 
-        slides[current].classList.remove("active");
-
         current++;
 
-        if(current>=slides.length){
+        if(current>=images.length){
 
             current=0;
 
         }
 
-        slides[current].classList.add("active");
+        bg.style.opacity=0;
 
-    },8000);
+        card.style.opacity=0;
+
+        setTimeout(()=>{
+
+            bg.src=images[current];
+
+            card.src=images[current];
+
+            bg.style.opacity=1;
+
+            card.style.opacity=1;
+
+        },400);
+
+    },7000);
 
 }
+
 /* ==========================================================
    HERO WORD
 ========================================================== */
@@ -348,5 +375,45 @@ function currentYear(){
     if(!year) return;
 
     year.textContent=new Date().getFullYear();
+
+}
+/* ==========================================================
+   hero kicker
+
+========================================================== */
+
+function heroKicker(){
+
+    const text=document.getElementById("heroKicker");
+
+    if(!text) return;
+
+    const words=[
+
+        "BECOME",
+
+        "PROTECT",
+
+        "RULE",
+
+        "BUILD"
+
+    ];
+
+    let current=0;
+
+    setInterval(()=>{
+
+        current++;
+
+        if(current>=words.length){
+
+            current=0;
+
+        }
+
+        text.textContent=words[current];
+
+    },3000);
 
 }

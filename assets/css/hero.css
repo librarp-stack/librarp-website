@@ -1,0 +1,398 @@
+/* ==========================================================
+   HERO TEST V1
+   LIBRA RP
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#090909;
+
+    color:#fff;
+
+    font-family:"Montserrat",sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/* ============================= */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+.container{
+
+    width:min(1400px,92%);
+
+    margin:auto;
+
+}
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 70px;
+
+    z-index:999;
+
+    backdrop-filter:blur(16px);
+
+    background:rgba(10,10,10,.28);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.logo img{
+
+    height:42px;
+
+}
+
+.logo h2{
+
+    font-size:2rem;
+
+    font-family:"Oswald",sans-serif;
+
+}
+
+.logo h2 span{
+
+    color:#FFC107;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:60px;
+
+}
+
+nav a{
+
+    font-weight:700;
+
+}
+
+.play-btn{
+
+    background:#FFC107;
+
+    color:#111;
+
+    padding:18px 34px;
+
+    border-radius:18px;
+
+    font-weight:700;
+
+}
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:38% 62%;
+
+    align-items:center;
+
+    width:min(1500px,92%);
+
+    margin:auto;
+
+    gap:70px;
+
+}
+.hero-background{
+
+position:absolute;
+
+inset:0;
+
+overflow:hidden;
+
+z-index:-2;
+
+}
+
+.hero-background img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+filter:blur(14px) brightness(.15);
+
+transform:scale(1.15);
+
+transition:
+
+opacity .8s ease;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(9,9,9,.95),
+
+        rgba(9,9,9,.75),
+
+        rgba(9,9,9,.55)
+
+    );
+
+    z-index:-1;
+
+}
+.hero-left{
+
+    max-width:620px;
+
+}
+
+.hero-left span{
+
+    display:block;
+
+    color:#FFC107;
+
+    font-weight:800;
+
+    letter-spacing:4px;
+
+    margin-bottom:18px;
+
+}
+
+.hero-left h1{
+
+    font-size:clamp(5.6rem,9vw,7.6rem);
+
+line-height:.86;
+
+letter-spacing:-3px;
+
+}
+
+.hero-left p{
+
+    color:#d6d6d6;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+.hero-right img{
+
+    width:115%;
+
+    max-width:1100px;
+
+    transform:translateX(80px);
+
+}
+@keyframes heroFloat{
+
+    0%{
+        transform:translateX(70px) translateY(0);
+    }
+
+    50%{
+        transform:translateX(70px) translateY(-10px);
+    }
+
+    100%{
+        transform:translateX(70px) translateY(0);
+    }
+
+}
+
+.hero-right img{
+
+    animation:heroFloat 6s ease-in-out infinite;
+
+}
+.buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    margin:45px 0;
+
+}
+
+.primary{
+
+    background:#FFC107;
+
+    color:#111;
+
+    padding:20px 42px;
+
+    border-radius:18px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.primary:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 45px rgba(255,193,7,.35);
+
+}
+
+.secondary{
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.05);
+
+    padding:20px 42px;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+}
+
+.secondary:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+.search{
+
+    width:600px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:999px;
+
+    padding:18px 28px;
+
+}
+
+.search input{
+
+    flex:1;
+
+    border:none;
+
+    background:none;
+
+    color:white;
+
+    font-size:1rem;
+
+    outline:none;
+
+}
+body{
+
+    background:
+        radial-gradient(circle at right,
+            rgba(255,193,7,.06),
+            transparent 40%),
+
+        linear-gradient(
+            180deg,
+            #090909,
+            #0c0c0c,
+            #090909
+        );
+
+}
+#heroBackground,
+#heroImage,
+#heroRole{
+
+transition:
+
+opacity .5s ease;
+
+}
