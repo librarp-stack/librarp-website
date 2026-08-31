@@ -417,3 +417,36 @@ function heroKicker(){
     },3000);
 
 }
+/* ==========================================================
+   SCROLL REVEAL
+========================================================== */
+
+function revealSections(){
+
+    const sections=document.querySelectorAll(".reveal");
+
+    const observer=new IntersectionObserver((entries)=>{
+
+        entries.forEach(entry=>{
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("active");
+
+            }
+
+        });
+
+    },{
+
+        threshold:.15
+
+    });
+
+    sections.forEach(section=>{
+
+        observer.observe(section);
+
+    });
+
+}
