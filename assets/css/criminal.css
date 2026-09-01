@@ -1,0 +1,875 @@
+/* ==========================================================
+   CRIMINAL HERO
+========================================================== */
+
+.criminal-hero{
+
+    position:relative;
+
+    min-height:92vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.criminal-background{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.criminal-background img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    filter:brightness(.30);
+
+    transform:scale(1.06);
+
+}
+
+.criminal-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            rgba(9,9,9,.95) 0%,
+
+            rgba(9,9,9,.70) 45%,
+
+            rgba(9,9,9,.30) 100%
+
+        );
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.criminal-content{
+
+    position:relative;
+
+    max-width:700px;
+
+    z-index:5;
+
+}
+
+.criminal-content h1{
+
+    margin:25px 0;
+
+    font-size:clamp(4rem,8vw,6.5rem);
+
+    line-height:.9;
+
+}
+
+.criminal-content p{
+
+    max-width:620px;
+
+    color:#d6d6d6;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+/* ==========================================================
+   GANGS
+========================================================== */
+
+.gangs-section{
+
+    padding:150px 0;
+
+}
+
+.gang-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.gang-card{
+
+    position:relative;
+
+    min-height:560px;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.45s;
+
+    background:#111;
+
+}
+
+.gang-card img{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .9s ease;
+
+}
+
+.gang-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            rgba(0,0,0,.05),
+
+            rgba(0,0,0,.92)
+
+        );
+
+    z-index:1;
+
+}
+
+.gang-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:38px;
+
+}
+
+.gang-badge{
+
+    display:inline-flex;
+
+    width:max-content;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    margin-bottom:18px;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#fff;
+
+}
+
+.families{
+
+    background:#2ea44f;
+
+}
+
+.ballas{
+
+    background:#7c3aed;
+
+}
+
+.bloods{
+
+    background:#dc2626;
+
+}
+
+.marabunta{
+
+    background:#2563eb;
+
+}
+
+.vagos{
+
+    background:#ca8a04;
+
+}
+
+.gang-card h3{
+
+    font-size:2.3rem;
+
+    margin-bottom:14px;
+
+}
+
+.gang-card p{
+
+    color:#d5d5d5;
+
+    line-height:1.8;
+
+    margin-bottom:24px;
+
+}
+
+.gang-card ul{
+
+    list-style:none;
+
+    margin:0 0 28px;
+
+    padding:0;
+
+}
+
+.gang-card li{
+
+    margin-bottom:10px;
+
+    color:#ececec;
+
+}
+
+.gang-card li::before{
+
+    content:"✔";
+
+    color:var(--primary);
+
+    margin-right:10px;
+
+}
+
+.gang-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 35px 90px rgba(0,0,0,.45);
+
+}
+
+.gang-card:hover img{
+
+    transform:scale(1.08);
+
+}
+/* ==========================================================
+   CARTEL SHOWCASE
+========================================================== */
+
+.cartel-showcase{
+
+    padding:180px 0;
+
+}
+
+.cartel-grid{
+
+    display:grid;
+
+    grid-template-columns:55% 45%;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.cartel-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.cartel-image img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    transition:transform 1s ease;
+
+}
+
+.cartel-image:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.cartel-content{
+
+    max-width:560px;
+
+}
+
+.cartel-content h2{
+
+    margin:22px 0;
+
+    font-size:clamp(3rem,5vw,5rem);
+
+    line-height:.95;
+
+}
+
+.cartel-content p{
+
+    color:#d3d3d3;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.cartel-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin:40px 0;
+
+}
+
+.cartel-features div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.cartel-features div:hover{
+
+    border-color:var(--primary);
+
+    transform:translateY(-5px);
+
+}
+
+.cartel-features i{
+
+    color:var(--primary);
+
+    font-size:1.2rem;
+
+}
+
+@media(max-width:1100px){
+
+.cartel-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.cartel-image img{
+
+height:500px;
+
+}
+
+}
+/* ==========================================================
+   CARTEL OPERATIONS
+========================================================== */
+
+.cartel-operations{
+
+    padding:170px 0;
+
+}
+
+.operations-slider{
+
+    display:grid;
+
+    grid-template-columns:70px 1fr 70px;
+
+    gap:30px;
+
+    align-items:center;
+
+    margin-top:60px;
+
+}
+
+.operation-display{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+}
+
+.operation-display img{
+
+    width:100%;
+
+    height:620px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+}
+
+.operation-info{
+
+    position:absolute;
+
+    left:40px;
+
+    bottom:40px;
+
+    width:430px;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:rgba(15,15,15,.82);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.operation-info h3{
+
+    margin-bottom:12px;
+
+    font-size:2rem;
+
+}
+
+.operation-info p{
+
+    color:#d5d5d5;
+
+    line-height:1.8;
+
+}
+
+.slider-btn{
+
+    width:58px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.slider-btn:hover{
+
+    background:var(--primary);
+
+    color:#111;
+
+}
+
+.operation-tabs{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.operation-tabs button{
+
+    padding:14px 24px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#171717;
+
+    color:#bbb;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.operation-tabs button.active{
+
+    background:var(--primary);
+
+    color:#111;
+
+}
+
+@media(max-width:1100px){
+
+.operations-slider{
+
+grid-template-columns:1fr;
+
+}
+
+.slider-btn{
+
+display:none;
+
+}
+
+.operation-display img{
+
+height:480px;
+
+}
+
+.operation-info{
+
+position:relative;
+
+left:0;
+
+bottom:0;
+
+width:100%;
+
+margin-top:-6px;
+
+border-radius:0 0 24px 24px;
+
+}
+
+}
+/* ==========================================================
+   CRIMINAL PROGRESSION
+========================================================== */
+
+.criminal-progression{
+
+    padding:170px 0;
+
+}
+
+.progression-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr auto 1fr auto 1fr;
+
+    gap:25px;
+
+    align-items:center;
+
+    margin-top:70px;
+
+}
+
+.progress-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:26px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.progress-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.35);
+
+}
+
+.progress-card i{
+
+    width:72px;
+
+    height:72px;
+
+    display:grid;
+
+    place-items:center;
+
+    margin:0 auto 20px;
+
+    border-radius:18px;
+
+    background:rgba(255,193,7,.10);
+
+    color:var(--primary);
+
+    font-size:1.5rem;
+
+}
+
+.progress-card h3{
+
+    margin-bottom:14px;
+
+}
+
+.progress-card p{
+
+    color:#d5d5d5;
+
+}
+
+.progress-arrow{
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+}
+
+@media(max-width:1100px){
+
+.progression-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.progress-arrow{
+
+display:none;
+
+}
+
+}
+/* ==========================================================
+   CRIMINAL CTA
+========================================================== */
+
+.criminal-cta{
+
+    position:relative;
+
+    min-height:75vh;
+
+    overflow:hidden;
+
+}
+
+.criminal-cta-bg{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.criminal-cta-bg img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transform:scale(1.05);
+
+    transition:transform 8s linear;
+
+}
+
+.criminal-cta:hover .criminal-cta-bg img{
+
+    transform:scale(1.10);
+
+}
+
+.criminal-cta-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            rgba(9,9,9,.75),
+            rgba(9,9,9,.92)
+        );
+
+}
+
+.criminal-cta-content{
+
+    max-width:820px;
+
+}
+
+.criminal-cta-content h2{
+
+    font-size:clamp(4rem,8vw,6.5rem);
+
+    line-height:.9;
+
+    margin:28px 0;
+
+}
+
+.criminal-cta-content p{
+
+    color:#ddd;
+
+    max-width:700px;
+
+    margin:0 auto 45px;
+
+    line-height:1.9;
+
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1200px){
+
+.gang-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.gang-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gang-card{
+
+min-height:460px;
+
+}
+
+.criminal-content{
+
+text-align:center;
+
+margin:auto;
+
+}
+
+}
