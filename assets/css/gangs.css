@@ -1,0 +1,548 @@
+/* ==========================================================
+   GANGS HERO
+========================================================== */
+
+.gangs-hero{
+
+    position:relative;
+
+    min-height:92vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.gangs-hero-bg{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.gangs-hero-bg img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    filter:brightness(.28);
+
+    transform:scale(1.08) rotate(.5deg);
+
+}
+
+.gangs-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9,9,9,.95) 0%,
+            rgba(9,9,9,.72) 45%,
+            rgba(9,9,9,.30) 100%
+        );
+
+}
+
+.gangs-content{
+
+    position:relative;
+
+    z-index:5;
+
+    max-width:700px;
+
+}
+
+.gangs-content h1{
+
+    font-size:clamp(4rem,8vw,6.5rem);
+
+    line-height:.9;
+
+    margin:25px 0;
+
+}
+
+.gangs-content p{
+
+    max-width:620px;
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+/* ==========================================================
+   OVERVIEW
+========================================================== */
+
+.gang-overview{
+
+    padding:150px 0;
+
+}
+
+.gang-overview .overview-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.gang-overview .overview-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:50px 30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.gang-overview .overview-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.35);
+
+}
+
+.gang-overview .overview-card h3{
+
+    font-size:4rem;
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+.gang-overview .overview-card p{
+
+    color:#d5d5d5;
+
+}
+/* ==========================================================
+   GANG SHOWCASE
+========================================================== */
+
+.gang-showcase{
+
+    padding:170px 0;
+
+}
+
+.gang-layout{
+
+    display:grid;
+
+    grid-template-columns:55% 45%;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.gang-showcase.alternate .gang-layout{
+
+    grid-template-columns:45% 55%;
+
+}
+
+.gang-image{
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.gang-image img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    transition:transform .8s ease;
+
+}
+
+.gang-image:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.gang-content{
+
+    max-width:560px;
+
+}
+
+.gang-content h2{
+
+    font-size:clamp(4.5rem,7vw,6.5rem);
+
+    line-height:.88;
+
+    text-transform:uppercase;
+
+    margin:18px 0 25px;
+
+}
+
+.gang-content p{
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.gang-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.gang-features div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:22px 26px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+.gang-features div:hover{
+
+    border-color:var(--primary);
+
+    transform:translateY(-4px);
+
+}
+
+.gang-features i{
+
+    color:var(--primary);
+
+    font-size:1.2rem;
+
+}
+/* ==========================================================
+   CTA
+========================================================== */
+
+.gangs-cta{
+
+    position:relative;
+
+    min-height:75vh;
+
+    overflow:hidden;
+
+}
+
+.gangs-cta-bg{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.gangs-cta-bg img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transform:scale(1.05);
+
+}
+
+.gangs-cta-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            rgba(9,9,9,.72),
+            rgba(9,9,9,.92)
+        );
+
+}
+
+.gangs-cta-content{
+
+    max-width:820px;
+
+}
+
+.gangs-cta-content h2{
+
+    font-size:clamp(4rem,8vw,6.5rem);
+
+    line-height:.9;
+
+    margin:25px 0;
+
+}
+
+.gangs-cta-content p{
+
+    color:#ddd;
+
+    margin:0 auto 45px;
+
+    max-width:700px;
+
+    line-height:1.9;
+
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1100px){
+
+.gang-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.gang-showcase.alternate .gang-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.gang-image img{
+
+height:500px;
+
+}
+
+.gang-features{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.gang-overview .overview-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gangs-content{
+
+text-align:center;
+
+margin:auto;
+
+}
+
+.gangs-content p{
+
+margin:auto auto 40px;
+
+}
+
+}
+.gang-showcase{
+
+    position:relative;
+
+}
+
+.gang-showcase::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-85px;
+
+    transform:translateX(-50%);
+
+    width:80px;
+
+    height:2px;
+
+    background:var(--primary);
+
+    opacity:.4;
+
+}
+.territory{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:var(--primary);
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+blockquote{
+
+    margin:30px 0;
+
+    padding-left:24px;
+
+    border-left:4px solid var(--primary);
+
+    font-style:italic;
+
+    color:#d8d8d8;
+
+}
+#families .gang-image{
+
+    box-shadow:0 35px 90px rgba(46,164,79,.18);
+
+}
+#bloods .gang-image{
+
+    box-shadow:0 35px 90px rgba(220,38,38,.18);
+
+}
+#ballas .gang-image{
+
+    box-shadow:0 35px 90px rgba(124,58,237,.18);
+
+}
+
+#marabunta .gang-image{
+
+    box-shadow:0 35px 90px rgba(37,99,235,.18);
+
+}
+#vagos .gang-image{
+
+    box-shadow:0 35px 90px rgba(202,138,4,.18);
+
+}
+.gang-showcase{
+
+    position:relative;
+
+}
+
+.gang-showcase::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-80px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:90px;
+
+    height:2px;
+
+    background:var(--primary);
+
+    opacity:.35;
+
+}
+.gang-features div{
+
+    backdrop-filter:blur(18px);
+
+}

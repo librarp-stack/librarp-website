@@ -1,0 +1,366 @@
+/* ==========================================================
+   FAQ HERO
+========================================================== */
+
+.faq-hero{
+
+    position:relative;
+
+    min-height:85vh;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.faq-hero-bg{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.faq-hero-bg img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    filter:brightness(.28);
+
+    transform:scale(1.05);
+
+}
+
+.faq-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9,9,9,.95),
+            rgba(9,9,9,.72),
+            rgba(9,9,9,.30)
+        );
+
+}
+
+.faq-content{
+
+    position:relative;
+
+    z-index:5;
+
+    max-width:700px;
+
+}
+
+.faq-content h1{
+
+    font-size:clamp(4rem,8vw,6rem);
+
+    line-height:.9;
+
+    margin:25px 0;
+
+}
+
+.faq-content p{
+
+    max-width:620px;
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+/* ==========================================================
+   SEARCH
+========================================================== */
+
+.faq-search{
+
+    padding:120px 0 60px;
+
+}
+
+.search-box{
+
+    position:relative;
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.search-box i{
+
+    position:absolute;
+
+    left:30px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:var(--primary);
+
+    font-size:1.1rem;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:22px 30px 22px 70px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    font-size:1rem;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.search-box input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(255,193,7,.08);
+
+}
+/* ==========================================================
+   FILTERS
+========================================================== */
+
+.faq-filters{
+
+    padding-bottom:90px;
+
+}
+
+.filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+.filter-buttons button{
+
+    padding:14px 26px;
+
+    border-radius:999px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#171717;
+
+    color:#cfcfcf;
+
+    transition:.3s;
+
+}
+
+.filter-buttons button:hover,
+
+.filter-buttons button.active{
+
+    background:var(--primary);
+
+    color:#111;
+
+}
+/* ==========================================================
+   FAQ
+========================================================== */
+
+.faq-section{
+
+    padding:40px 0 170px;
+
+}
+
+.faq-list{
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.faq-item{
+
+    margin-bottom:18px;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    padding:28px 34px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    font-size:1.15rem;
+
+    cursor:pointer;
+
+}
+
+.faq-question i{
+
+    color:var(--primary);
+
+    transition:.3s;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+}
+
+.faq-answer p{
+
+    padding:0 34px 28px;
+
+    color:#d5d5d5;
+
+    line-height:1.8;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:400px;
+
+}
+
+.faq-item.active .faq-question i{
+
+    transform:rotate(45deg);
+
+}
+/* ==========================================================
+   CTA
+========================================================== */
+
+.faq-cta{
+
+    padding:160px 0;
+
+    text-align:center;
+
+}
+
+.faq-cta h2{
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    margin:20px 0;
+
+}
+
+.faq-cta p{
+
+    max-width:650px;
+
+    margin:0 auto 40px;
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .faq-content{
+
+        text-align:center;
+
+        margin:auto;
+
+    }
+
+    .faq-content p{
+
+        margin:auto auto 40px;
+
+    }
+
+    .faq-question{
+
+        padding:22px;
+
+        font-size:1rem;
+
+    }
+
+    .faq-answer p{
+
+        padding:0 22px 22px;
+
+    }
+
+}
