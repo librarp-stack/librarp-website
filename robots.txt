@@ -1,0 +1,11 @@
+# ==========================================================
+# Libra RP Robots
+# ==========================================================
+
+User-agent: *
+
+Allow: /
+
+Disallow: /assets/
+
+Sitemap: https://librarp.com/sitemap.xml
