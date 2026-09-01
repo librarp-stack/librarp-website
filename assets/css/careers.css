@@ -1,0 +1,781 @@
+/* ==========================================================
+   CAREERS HERO
+========================================================== */
+
+.careers-hero{
+
+    position:relative;
+
+    min-height:92vh;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.careers-hero-bg{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.careers-hero-bg img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    filter:brightness(.30);
+
+    transform:scale(1.05);
+
+}
+
+.careers-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9,9,9,.95),
+            rgba(9,9,9,.72),
+            rgba(9,9,9,.25)
+        );
+
+}
+
+.careers-content{
+
+    position:relative;
+
+    z-index:5;
+
+    max-width:720px;
+
+}
+
+.careers-content h1{
+
+    font-size:clamp(4rem,8vw,6.5rem);
+
+    line-height:.9;
+
+    margin:24px 0;
+
+}
+
+.careers-content p{
+
+    max-width:620px;
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+    margin-bottom:45px;
+
+}
+/* ==========================================================
+   INTRO
+========================================================== */
+
+.careers-intro{
+
+    padding:150px 0 80px;
+
+}
+/* ==========================================================
+   DEPARTMENTS
+========================================================== */
+
+.department-showcase{
+
+    padding:170px 0;
+
+}
+
+.department-layout{
+
+    display:grid;
+
+    grid-template-columns:55% 45%;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.reverse{
+
+    grid-template-columns:45% 55%;
+
+}
+
+.reverse .department-content{
+
+    order:1;
+
+}
+
+.reverse .department-image{
+
+    order:2;
+
+}
+
+.department-image{
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.department-image img{
+
+    width:100%;
+
+    height:700px;
+
+    object-fit:cover;
+
+    transition:.8s;
+
+}
+
+.department-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.department-content{
+
+    max-width:560px;
+
+}
+
+.department-content h2{
+
+    font-size:clamp(3rem,5vw,5rem);
+
+    margin:18px 0;
+
+}
+
+.department-content h4{
+
+    font-size:1.4rem;
+
+    margin-bottom:25px;
+
+}
+
+.department-content p{
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+.department-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-bottom:40px;
+
+}
+
+.department-features span{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.department-features span:hover{
+
+    transform:translateY(-5px);
+
+}
+.department-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+.sapf .department-image{
+
+    box-shadow:
+        0 35px 90px rgba(59,130,246,.20);
+
+}
+
+.sapf-badge{
+
+    background:rgba(59,130,246,.12);
+
+    color:#8ec8ff;
+
+    border:1px solid rgba(59,130,246,.35);
+
+}
+
+.sapf h4{
+
+    color:#6fb6ff;
+
+}
+
+.sapf .department-features span:hover{
+
+    border-color:#4da3ff;
+
+}
+.fib .department-image{
+
+    box-shadow:
+        0 35px 90px rgba(212,175,55,.18);
+
+}
+
+.fib-badge{
+
+    background:rgba(212,175,55,.12);
+
+    color:#f2d46c;
+
+    border:1px solid rgba(212,175,55,.30);
+
+}
+
+.fib h4{
+
+    color:#f2d46c;
+
+}
+
+.fib .department-features span:hover{
+
+    border-color:#d4af37;
+
+}
+.ems .department-image{
+
+    box-shadow:
+        0 35px 90px rgba(220,38,38,.18);
+
+}
+
+.ems-badge{
+
+    background:rgba(220,38,38,.12);
+
+    color:#ff8f8f;
+
+    border:1px solid rgba(220,38,38,.30);
+
+}
+
+.ems h4{
+
+    color:#ff7373;
+
+}
+
+.ems .department-features span:hover{
+
+    border-color:#dc2626;
+
+}
+.government .department-image{
+
+    box-shadow:
+        0 35px 90px rgba(184,134,11,.20);
+
+}
+
+.government-badge{
+
+    background:rgba(184,134,11,.12);
+
+    color:#f4d67a;
+
+    border:1px solid rgba(184,134,11,.30);
+
+}
+
+.government h4{
+
+    color:#f4d67a;
+
+}
+
+.government .department-features span:hover{
+
+    border-color:#b8860b;
+
+}
+/* ==========================================================
+   APPLICATION
+========================================================== */
+
+.application-process{
+
+    padding:170px 0;
+
+}
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.process-card{
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.process-card span{
+
+    display:block;
+
+    font-size:2.4rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+/* ==========================================================
+   CTA
+========================================================== */
+
+.careers-cta{
+
+    position:relative;
+
+    min-height:60vh;
+
+    overflow:hidden;
+
+}
+
+.careers-cta-bg{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.careers-cta-bg img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.careers-cta-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            rgba(9,9,9,.78),
+            rgba(9,9,9,.92)
+        );
+
+}
+
+.careers-cta-content{
+
+    max-width:760px;
+
+}
+
+.careers-cta-content h2{
+
+    font-size:clamp(3rem,6vw,4.8rem);
+
+    margin:20px 0;
+
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1100px){
+
+    .department-layout,
+
+    .reverse{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .reverse .department-content,
+
+    .reverse .department-image{
+
+        order:unset;
+
+    }
+
+    .department-image img{
+
+        height:500px;
+
+    }
+
+    .process-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .department-features{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .process-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .careers-content{
+
+        text-align:center;
+
+        margin:auto;
+
+    }
+
+    .careers-content p{
+
+        margin:auto auto 40px;
+
+    }
+
+}
+/* ==========================================================
+   DEPARTMENT SHOWCASE
+========================================================== */
+
+.department-showcase{
+
+    padding:170px 0;
+
+    position:relative;
+
+}
+
+.department-layout{
+
+    display:grid;
+
+    grid-template-columns:55% 45%;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.department-image{
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.department-image img{
+
+    width:100%;
+
+    height:700px;
+
+    object-fit:cover;
+
+    transition:.8s;
+
+}
+
+.department-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.department-content{
+
+    max-width:560px;
+
+}
+
+.department-content h2{
+
+    font-size:clamp(3rem,5vw,5rem);
+
+    margin:18px 0;
+
+}
+
+.department-content h4{
+
+    color:#5ca9ff;
+
+    font-size:1.35rem;
+
+    margin-bottom:25px;
+
+}
+
+.department-content p{
+
+    color:#d5d5d5;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.department-features{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-bottom:40px;
+
+}
+
+.department-features span{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.department-features span:hover{
+
+    border-color:#4da3ff;
+
+    transform:translateY(-5px);
+
+}
+
+.department-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+.sapf .department-image{
+
+    box-shadow:
+
+        0 35px 90px rgba(37,99,235,.18);
+
+}
+
+.sapf-badge{
+
+    background:
+
+        rgba(37,99,235,.18);
+
+    color:#7fc2ff;
+
+    border:1px solid rgba(37,99,235,.35);
+
+}
+/* ==========================================================
+   FIB
+========================================================== */
+
+.reverse{
+
+    grid-template-columns:45% 55%;
+
+}
+
+.reverse .department-content{
+
+    order:1;
+
+}
+
+.reverse .department-image{
+
+    order:2;
+
+}
+
+.fib .department-image{
+
+    box-shadow:
+        0 35px 90px rgba(212,175,55,.18);
+
+}
+
+.fib-badge{
+
+    background:
+        rgba(212,175,55,.12);
+
+    border:1px solid rgba(212,175,55,.30);
+
+    color:#f0d06d;
+
+}
+
+.fib .department-content h4{
+
+    color:#f0d06d;
+
+}
+/* ==========================================================
+   EMS
+========================================================== */
+
+.ems .department-image{
+
+    box-shadow:
+        0 35px 90px rgba(220,38,38,.18);
+
+}
+
+.ems-badge{
+
+    background:
+        rgba(220,38,38,.12);
+
+    border:1px solid rgba(220,38,38,.30);
+
+    color:#ff8b8b;
+
+}
+
+.ems .department-content h4{
+
+    color:#ff6b6b;
+
+}
+/* ==========================================================
+   GOVERNMENT
+========================================================== */
+
+.government .department-image{
+
+    box-shadow:
+        0 35px 90px rgba(184,134,11,.20);
+
+}
+
+.government-badge{
+
+    background:
+        rgba(184,134,11,.12);
+
+    border:1px solid rgba(184,134,11,.30);
+
+    color:#f6d76f;
+
+}
+
+.government .department-content h4{
+
+    color:#f6d76f;
+
+}
