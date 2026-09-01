@@ -76,6 +76,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 </head>
 
 <body>
+<div id="cursorGlow"></div>
  <header>
 
 <div class="logo">
@@ -569,110 +570,90 @@ Contact
 
     <div class="container">
 
-        <div class="footer-grid">
-
-            <!-- Brand -->
+        <div class="footer-top">
 
             <div class="footer-brand">
 
-                <img
-                    src="../assets/images/logos/logo.png"
-                    alt="Libra RP Logo">
-                 <h3>LIBRA RP</h3>
+                <img src="../assets/images/logos/logo.png"
+                     alt="Libra RP">
+
+                <h2>LIBRA RP</h2>
 
                 <p>
 
-                    Libra RP is a premium FiveM GTA V Roleplay server
-                    focused on immersive storytelling, realistic progression,
-                    and an active community.
+                    Premium FiveM GTA V Roleplay built around immersive
+                    storytelling, realistic progression and an active
+                    community.
 
                 </p>
 
                 <div class="footer-social">
 
-                    <a href="https://discord.gg/librarp" target="_blank">
+                    <a href="https://discord.gg/librarp"><i class="fa-brands fa-discord"></i></a>
 
-                        <i class="fa-brands fa-discord"></i>
+                    <a href="https://librarp.com/forums/"><i class="fa-solid fa-comments"></i></a>
 
-                    </a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
 
-                    <a href="https://librarp.com/forums/" target="_blank">
-
-
-
-                        <i class="fa-solid fa-comments"></i>
-
-                    </a>
-
-                    <a href="https://www.youtube.com/@LibraRolePlayEnglish">
-
-                        <i class="fa-brands fa-youtube"></i>
-
-                    </a>
-
-                    <a href="https://www.instagram.com/libraroleplay/" target="_blank">
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                    </a>
+                    <a href="https://www.instagram.com/libraroleplay/"><i class="fa-brands fa-instagram"></i></a>
 
                 </div>
 
             </div>
 
-            <!-- Explore -->
+            <div class="footer-links">
 
-            <div>
+                <div>
 
-                <h3>Explore</h3>
+                    <h3>Explore</h3>
 
-                <a href="../experience/index.html">Experience</a>
+                    <a href="../experience/index.html">Experience</a>
 
-                <a href="../careers/index.html">Legal Services</a>
+                    <a href="../careers/index.html">Careers</a>
 
-                <a href="../criminal/index.html">Criminal World</a>
+                    <a href="../criminal/index.html">Criminal</a>
 
-                <a href="../community/index.html">Community</a>
+                    <a href="../community/index.html">Community</a>
 
-                <a href="../support/index.html">Knowledge Base</a>
+                </div>
 
-                <a href="../support/faq.html">FAQ</a>
+                <div>
 
-                <a href="../support/rules.html">Server Rules</a>
+                    <h3>Resources</h3>
 
-                <a href="../community/events.html">Events</a>
+                    <a href="../support/index.html">Knowledge Base</a>
 
-            </div>
+                    <a href="../support/faq.html">FAQ</a>
 
-            <!-- Resources -->
+                    <a href="../support/rules.html">Server Rules</a>
 
-            <div>
+                    <a href="https://librarp.com/forums/">Forums</a>
 
-                <h3>Resources</h3>
+                </div>
 
-                <a href="support/index.html">Knowledge Base</a>
+                <div>
 
-                <a href="support/faq.html">FAQ</a>
+                    <h3>Legal</h3>
 
-                <a href="support/rules.html">Server Rules</a>
+                    <a href="../support/privacy.html">Privacy Policy</a>
 
-                <a href="https://librarp.com/forums/">Forums</a>
+                    <a href="../support/terms.html">Terms of Service</a>
 
-            </div>
+                </div>
 
-            <!-- Connect -->
+                <div>
 
-            <div>
+                    <h3>Connect</h3>
 
-                <h3>Connect</h3>
+                    <a href="https://cfx.re/join/pgak8ay">Play Now</a>
 
-                <a href="https://cfx.re/join/pgak8ay">Play Now</a>
+                    <a href="https://discord.gg/librarp">Discord</a>
 
-                <a href="https://discord.gg/librarp">Discord</a>
+                    <a href="../community/events.html">Events</a>
 
-                <a href="community/events.html">Events</a>
+                    <a href="#">Server Status</a>
 
-                <a href="#">Server Status</a>
+                </div>
 
             </div>
 
@@ -680,24 +661,21 @@ Contact
 
         <div class="footer-bottom">
 
-            <p>
+            <span>
 
                 © 2026 Libra RP. All Rights Reserved.
 
-            </p>
+            </span>
 
-            <div>
+            <span>
 
-                <a href="privacy.html">Privacy Policy</a>
+                Built for immersive FiveM roleplay.
 
-                <a href="terms.html">Terms of Service</a>
-
-            </div>
+            </span>
 
         </div>
 
     </div>
-
 
 </footer>
 
@@ -742,6 +720,7 @@ document.querySelectorAll('.policy-sidebar a').forEach(anchor=>{
 }
 
 </script>
+<script src="../assets/js/app.js"></script>
 </body>
 
 </html>
