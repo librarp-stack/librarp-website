@@ -257,14 +257,11 @@
 
     position:relative;
 
-    min-height:48vh;
-
-    padding:100px 0;
+    padding:350px 0;
 
     overflow:hidden;
 
 }
-
 .community-cta-bg{
 
     position:absolute;
